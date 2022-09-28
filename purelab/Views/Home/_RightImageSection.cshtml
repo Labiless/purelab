@@ -1,0 +1,17 @@
+﻿@model purelab.Models.Post
+
+<div class="container-fluid">
+    <div class="row align-items-center pt-5 pb-5">
+        <div class="col-sm-6 col-12">
+            <div class="w-75 m-auto">
+                <p class="fw-bold">@Model.Category</p>
+                <h2 style="color: var(--blue)">@Model.Title</h2>
+                <p style="color:var(--light-grey)">@Model.Subtitle</p>
+                <a class="custom-link" href="@Model.LinkUrl">@Model.LinkText</a>
+            </div>
+        </div>
+        <div class="col-sm-6 d-none d-sm-block">
+            <img class="w-75"  src="@Model.ImageUrl" />
+        </div>
+    </div>
+</div>

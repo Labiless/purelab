@@ -1,0 +1,28 @@
+﻿@model purelab.Models.Post
+
+
+<style>
+    .post-preview{
+        background-color: white;
+        padding: 0px;
+    }
+    .post-preview > div:first-child{
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+        .post-preview > div {
+            padding: 30px;
+        }
+</style>
+
+<div class="col-sm-6 col-xl-3 col-xxl-2 col-12 m-3 post-preview">
+    <div style="background-image: url(@Model.ImageUrl)">
+    </div>
+    <div>
+        <p class="fw-bold" style="color:var(--blue)">@Model.Category <span class="fw-light" style="color: var(--light-grey)">/ @Model.CreationDate.ToString("MMMM yyy"), @Model.CreationDate.Day</span></p>
+        <h5 class="fw-bold">@Model.Title</h5>
+        <a href="@Model.LinkUrl" class=" animated-link">@Model.LinkText</a>
+    </div>
+</div>

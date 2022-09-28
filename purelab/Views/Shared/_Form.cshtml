@@ -1,0 +1,29 @@
+﻿<style>
+    .form-container{
+        background-color: var(--light-grey);
+        /**/
+    }
+    input,input[type=text], input[type=email] {
+        border:none;
+        outline:none;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+
+</style>
+
+<div class="form-container col-sm-3 col-12 text-white p-5">
+    <h3>Contact us</h3>
+    <form class="d-flex flex-column">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="name" />
+        
+        <label for="name">Surname</label>
+        <input type="text" name="surname" placeholder="surname" />
+
+        <label for="name">Email</label>
+        <input type="email" name="email" placeholder="email" />
+
+        <input class="custom-link mt-2" type="submit" value="Send request"/>
+    </form>
+</div>

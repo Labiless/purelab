@@ -1,0 +1,94 @@
+﻿
+<style>
+    footer {
+        background-color: var(--dark-grey);
+    }
+
+    .footer-text {
+        color: var(--light-grey);
+    }
+
+    .footer-ul {
+        list-style-type: none;
+        padding: 0px;
+        color: var(--blue);
+
+    }
+        .footer-ul > li:first-child {
+            font-weight: bold;
+        }
+        .footer-ul > li > a {
+            color: white;
+        }
+
+@@media(max-width: 500px){
+        .footer-ul, .footer-ul > li > a {
+    font-size: 9px;
+        }
+}
+</style>
+
+
+<footer class="mw-100 m-0 row justify-content-center">
+    <!--form-->
+    <partial name="_Form" />
+    <!--info-->
+        <div class="col-sm-3 col-12 p-5">
+            <div class="d-flex justify-content-start align-items-center">
+                <img class="ms-0 mt-0 m-4 " src="img/Logo.svg" />
+                <h3 class="text-white text-"><strong>Nature</strong> Agency</h3>
+            </div>
+            <p class="mb-5 footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+            <div class="d-flex justify-content-start align-items-center">
+            <a href="test" class="me-3"><img src="img/Icon simple-facebook.svg"/></a>
+            <a href="test" class="me-3"><img src="img/Icon simple-instagram.svg" /></a>
+            <a href="test" class="me-3"><img src="img/Icon simple-linkedin.svg" /></a>
+            </div>
+        </div>
+        <!--link-->
+        <div class="col-sm-6 col-12 p-5 pt-sm-5 pt-0">
+        <div class="row justify-content-around">
+                <!--footer link list-->
+            <div class="col-sm-auto col-3 justify-content-center">
+                    <ul class="footer-ul">
+                        <li>Lorem Ipsum</li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+                <!--footer link list-->
+            <div class="col-sm-auto col-3 justify-content-center">
+                <ul class="footer-ul">
+                    <li>Lorem Ipsum</li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+                <!--footer link list-->
+            <div class="col-sm-auto col-3 justify-content-center">
+                <ul class="footer-ul">
+                    <li>Lorem Ipsum</li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+                <!--footer link list-->
+            <div class="col-sm-auto col-3 justify-content-center">
+                <ul class="footer-ul">
+                    <li>Lorem Ipsum</li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    <li><a href="test">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+</footer>

@@ -1,0 +1,29 @@
+﻿@model purelab.Models.Post
+
+<style>
+    .left-image{
+        height:600px;
+        background-size: cover;
+        background-position: center;
+    }
+    @@media(max-width:500px){
+        .left-image{
+            height:200px;
+        }
+    }
+</style>
+
+<div class="container-fluid pb-sm-0 pb-4" style="background-color: var(--blue)">
+    <div class="row align-items-center">
+        <div class="col-sm-6 col-12 left-image mb-sm-0 mb-4" style="background-image: url(@Model.ImageUrl)">
+        </div>
+        <div class="col-sm-6 col-12">
+            <div class="w-75 m-auto text-white">
+                <p class="fw-bold">@Model.Category</p>
+                <h2 >@Model.Title</h2>
+                <p>@Model.Subtitle</p>
+                <a class="custom-link-grey custom-link" href="@Model.LinkUrl">@Model.LinkText</a>
+            </div>
+        </div>
+    </div>
+</div>  

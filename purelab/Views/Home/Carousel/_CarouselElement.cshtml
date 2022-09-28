@@ -1,0 +1,31 @@
+﻿@model purelab.Models.Post
+
+<style>
+    .carousel-item {
+        background-size: cover;
+        background-position: center;
+        /*padding: 250px 20% 100px 20%;*/
+        padding: 250px 0px 100px 0px;
+        padding-left: 10%;
+        padding-right:10%;
+    }
+    @@media(max-width: 500px){
+        .carousel-item {
+            padding: 100px 0px 100px 0px;
+        }
+    }
+</style>
+<div class="container-fluid carousel-item @Model.getActive()" style="background-image: url(@Model.ImageUrl)">
+    <div class="row">
+        <div class="col-sm-6 col-12 text-white">
+            <div class="w-sm-75 w-75 m-auto">
+                <p class="fw-bold">@Model.Category</p>
+                <h1>@Model.Title</h1>
+                <p>@Model.Subtitle</p>
+                <a class="custom-link" href="@Model.LinkUrl">@Model.LinkText</a>
+            </div>
+        </div>
+        <div class="col-6"></div>
+    </div>
+</div>
+

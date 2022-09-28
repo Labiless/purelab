@@ -1,0 +1,12 @@
+﻿@model purelab.Models.Post
+
+<div>
+    <p>@Model.Id</p>
+    <p>@Model.CreationDate</p>
+    <p>@Model.Category</p>
+    <h1>@Model.Title</h1>
+    <h2>@Model.Subtitle</h2>
+    <p>@Model.Text</p>
+    <img src="@Model.ImageUrl"/>
+    <a class="custom-link" href="@Model.LinkUrl">@Model.LinkText</a>
+</div>

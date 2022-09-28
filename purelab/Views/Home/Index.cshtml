@@ -1,0 +1,16 @@
+﻿@model List<purelab.Models.Post>
+@using System.Linq
+@{
+    
+
+    ViewData["Title"] = "Home Page";
+    //right image section
+    Post p1 = Model.Where(post => post.ImageUrl == "img/photo-right.jpg").ToList()[0];
+    //left image section
+    Post p2 = Model.Where(post => post.ImageUrl == "img/photo-left.jpg").ToList()[0];
+}
+
+<partial name="Carousel/_Carousel" model="@Model"/>
+<partial name="_RightImageSection" model="p1" />
+<partial name="LatestPost/_LatestPostSection" model="@Model" />
+<partial name="_LeftImageSection" model="p2" />
